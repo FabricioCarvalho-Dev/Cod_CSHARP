@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Qual hora atual?");
+		int horaAt = int.Parse(Console.ReadLine());
+		
+		 if (horaAt < 12){
+			Console.WriteLine("Bom dia");
+		  }
+		 else if (horaAt < 18){
+	         Console.WriteLine("Boa tarde");
+		  }
+		 else{
+	         Console.WriteLine("Boa noite");
+		}
+	
+	}
+}

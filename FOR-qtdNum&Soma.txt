@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.Write("Quantos numeros intereiros voce vai digitar? ");
+		int N = int.Parse(Console.ReadLine());
+		
+		int soma = 0;
+		for (int i = 1; i <= N; i++) {
+			Console.Write("Valor#{0}: ",i);
+			int valor = int.Parse(Console.ReadLine());
+			soma += valor;			
+		}
+		
+		Console.WriteLine("soma total= " +soma);
+	}
+}

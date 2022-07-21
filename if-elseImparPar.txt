@@ -1,0 +1,31 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Entre com um numero inteiro");
+		int num1 = int.Parse(Console.ReadLine());
+		
+		 if (num1 % 2 == 00){
+			Console.WriteLine("par");
+			}
+		 else {
+	          
+		 Console.WriteLine("Impar");
+		}
+	
+		Console.WriteLine("Entre com outro numero inteiro");
+		int num2 = int.Parse(Console.ReadLine());
+		
+		 if (num2 % 2 == 00){ //composta
+			
+			Console.WriteLine("par");
+			}
+		else {
+	          
+		    Console.WriteLine("Impar");
+		   }
+		
+	}
+}

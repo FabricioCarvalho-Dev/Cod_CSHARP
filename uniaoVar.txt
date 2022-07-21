@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double salario = 10.565D;
+		string nome = "Fabricio";
+		int idade = 28;
+		
+		//PlaceHolders
+		Console.WriteLine("{0} tem {1} anos e recebe {2} reais", nome, idade, salario); 
+		//INTERPOLIZAÇAO
+		//Console.WriteLine("(nome) tem (idade) anos e recebe {salario} reais"); 
+		//concatenaçao
+		Console.WriteLine(nome + "tem" + idade + "anos e recebe " + salario + " reais"); 
+		
+	}
+}

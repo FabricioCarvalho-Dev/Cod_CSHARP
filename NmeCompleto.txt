@@ -1,0 +1,32 @@
+using System;
+using System.Globalization;
+					
+public class Program
+{
+	public static void Main()
+	{
+
+		string nome;
+		int qtdQuartos;
+		double precoPdt;
+		
+		Console.WriteLine("Entre com seu nome completo");
+		nome = Console.ReadLine();
+		Console.WriteLine("Quantos quartos tem na sua casa?");
+		qtdQuartos = int.Parse(Console.ReadLine());
+		Console.WriteLine("Informe o preço de um produto");
+		precoPdt = double.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Informe ultimo nome com sua idade e altura na mesma linha:");
+		string[] vet = Console.ReadLine().Split(' ');
+		string ultNome = vet[0];
+		int idade = int.Parse(vet[1]);
+		double altura = double.Parse(vet[2], CultureInfo.InvariantCulture);
+		
+		Console.WriteLine(nome);
+		Console.WriteLine(qtdQuartos);
+		Console.WriteLine(precoPdt);
+		Console.Write("Seu ultino nome {0}, sua idade: {1} e sua altura {2}", ultNome, idade, altura);
+	
+	}
+}

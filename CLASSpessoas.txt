@@ -1,0 +1,37 @@
+using System.Globalization;
+
+namespace IniciandoClass;
+class Program
+{
+     static void Main(){
+
+        Pessoas  p1, p2;
+
+        p1 = new Pessoas();
+        p2 = new Pessoas();    
+
+
+        Console.WriteLine("Entre com os dados da primeira pessoa ");
+        Console.Write("Nome: ");
+         p1.nome = Console.ReadLine();
+        Console.Write("idade: ");
+        p1.idade = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Entre com dados da segunda pessoa ");
+        Console.Write("Nome: ");
+        p2.nome = Console.ReadLine();
+        Console.Write("idade: ");
+        p2.idade = int.Parse(Console.ReadLine());
+
+    
+
+        if (p1.idade > p2.idade)
+        {
+            Console.WriteLine("{0} é a pessoa mais velha", p1.nome );
+        }
+        else
+        {
+            Console.WriteLine("A pessoa mais velha é  " + p2.nome);
+        }
+    }
+}
